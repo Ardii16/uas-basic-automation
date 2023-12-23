@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.3 on win32)" generated="20231223 11:07:31.875" rpa="false" schemaversion="4">
+<suite id="s1" name="Test-Suite-1" source="C:\Users\user\Desktop\basic-automation\basic-automation\project-demo\test-suite-1.robot">
+<test id="s1-t1" name="testcase-1" line="24">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 11:07:32.574" level="INFO">Opening browser 'chrome' to base url 'http://localhost/karyawan/index.php'.</msg>
+<status status="PASS" starttime="20231223 11:07:32.573" endtime="20231223 11:07:36.574"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 11:07:36.576" level="INFO">Typing text 'fuad@demo.isc.id' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20231223 11:07:36.574" endtime="20231223 11:07:36.814"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 11:07:36.817" level="INFO">Typing text '1234' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20231223 11:07:36.814" endtime="20231223 11:07:36.956"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231223 11:07:36.957" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20231223 11:07:36.956" endtime="20231223 11:07:37.239"/>
+</kw>
+<status status="PASS" starttime="20231223 11:07:32.572" endtime="20231223 11:07:37.239"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231223 11:07:37.240" endtime="20231223 11:07:39.696"/>
+</kw>
+<status status="PASS" starttime="20231223 11:07:32.571" endtime="20231223 11:07:39.699"/>
+</test>
+<test id="s1-t2" name="testcase-2" line="29">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 11:07:39.711" level="INFO">Opening browser 'chrome' to base url 'http://localhost/karyawan/index.php'.</msg>
+<status status="PASS" starttime="20231223 11:07:39.707" endtime="20231223 11:07:43.587"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 11:07:43.590" level="INFO">Typing text 'fuad@demo.isc.id' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20231223 11:07:43.588" endtime="20231223 11:07:43.816"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 11:07:43.819" level="INFO">Typing text 'wrongpass' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20231223 11:07:43.818" endtime="20231223 11:07:43.978"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231223 11:07:43.979" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20231223 11:07:43.979" endtime="20231223 11:07:44.108"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<var>${alert_message}</var>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20231223 11:07:44.116" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg timestamp="20231223 11:07:44.132" level="INFO">${alert_message} = Maaf email atau password anda salah</msg>
+<status status="PASS" starttime="20231223 11:07:44.116" endtime="20231223 11:07:44.132"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231223 11:07:44.132" endtime="20231223 11:07:46.491"/>
+</kw>
+<status status="PASS" starttime="20231223 11:07:39.703" endtime="20231223 11:07:46.493"/>
+</test>
+<status status="PASS" starttime="20231223 11:07:31.879" endtime="20231223 11:07:46.500"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test-Suite-1">Test-Suite-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
